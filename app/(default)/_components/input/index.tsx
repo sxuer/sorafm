@@ -11,7 +11,7 @@ export default function () {
 
   const handleSubmit = async () => {
     if (!description) {
-      toast.error("please descibe your story");
+      toast.error("请描述你想要生成的视频内容");
       return;
     }
 

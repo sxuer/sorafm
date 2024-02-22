@@ -22,7 +22,7 @@ export default ({ videos }: { videos: Video[] }) => {
                       controls
                       autoPlay
                     >
-                      Your browser does not support the video tag.
+                      你的浏览器不支持展示当前视频
                     </video>
 
                     <div className="mb-4 mt-4 flex flex-row items-center">

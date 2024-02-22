@@ -6,10 +6,10 @@ export default function () {
     <div className="mx-auto mt-4 max-w-full sm:mt-4 sm:px-0 lg:px-0">
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-12 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
         <h1 className="mx-auto max-w-4xl text-center text-3xl font-bold tracking-tight text-primary sm:text-6xl">
-          Sora AI Video Generator
+          Sora AI 视频生成器
         </h1>
         <h2 className="mx-auto mt-2 max-w-xl text-center text-xl leading-8 text-gray-300">
-          Make AI Video With Sora
+          使用 Sora 生成视频
         </h2>
         <Producthunt />
 

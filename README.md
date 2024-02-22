@@ -1,10 +1,10 @@
-# Sora.FM
+# Sora-Ai.Space
 
-Sora AI Video Generator
+Sora AI 视频生成器
 
 ## Live Demo
 
-[https://sora.fm](https://sora.fm)
+[https://sora-ai.space](https://sora-ai.space)
 
 ![preview](./preview.png)
 

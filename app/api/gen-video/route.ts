@@ -13,12 +13,12 @@ export async function POST(req: Request) {
 
     const videos = await getRandVideos(1, 1);
     if (videos.length === 0) {
-      return respErr("gen video failed");
+      return respErr("视频生成失败");
     }
 
     return respData(videos[0]);
   } catch (e) {
-    console.log("gen video failed:", e);
-    return respErr("gen video failed");
+    console.log("视频生成失败:", e);
+    return respErr("视频生成失败");
   }
 }

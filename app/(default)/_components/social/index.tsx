@@ -14,7 +14,7 @@ export default function () {
         <BsGithub className="text-lg" />
       </a>
       <a
-        href="https://www.producthunt.com/posts/sora-ai-video-generator?utm_source=sora.fm"
+        href="https://www.producthunt.com/posts/sora-ai-video-generator?utm_source=sora-ai.space"
         target="_blank"
         className="mx-3 flex max-w-[24px] flex-col items-center justify-center"
       >

@@ -28,12 +28,12 @@ export default function () {
       });
       const { code, message, data } = await resp.json();
       if (data) {
-        toast.success("gen video ok");
+        toast.success("视频生成成功");
         router.push(`/video/${data.uuid}`);
       }
     } catch (e) {
-      toast.error("gen video failed");
-      console.log("gen video failed", e);
+      toast.error("视频生成失败");
+      console.log("视频生成失败", e);
     }
   };
 
@@ -52,7 +52,7 @@ export default function () {
         type="text"
         required
         className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-        placeholder="Describe your story"
+        placeholder="描述你想要生成的视频内容"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         onKeyDown={handleInputKeydown}
@@ -62,7 +62,7 @@ export default function () {
         className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         onClick={handleSubmit}
       >
-        Surprise me
+        生成视频
       </button>
     </div>
   );

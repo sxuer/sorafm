@@ -34,12 +34,8 @@ export default async function ({ params }: { params: { uuid: string } }) {
     <div className="mx-auto mt-4 max-w-full sm:mt-4 sm:px-0 lg:px-0">
       <div className="relative isolate overflow-hidden bg-gray-900 px-2 py-12 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
         <h1 className="mx-auto max-w-4xl text-center text-3xl font-bold tracking-tight text-primary sm:text-6xl">
-          Sora AI 视频 样例
+          Sora AI 视频
         </h1>
-        <h2 className="mx-auto mt-2 max-w-xl text-center text-xl leading-8 text-gray-300">
-          Sora AI 视频生成器
-        </h2>
-
         {video && (
           <div className="relative z-10 mt-8 bg-gray-900 pb-20 sm:mt-16 sm:pb-24 xl:pb-0">
             <div
@@ -109,7 +105,7 @@ export default async function ({ params }: { params: { uuid: string } }) {
 
       <div className="relative isolate overflow-hidden bg-gray-900 px-2 py-4 shadow-2xl sm:rounded-3xl sm:px-12 xl:py-12">
         <h2 className="mx-auto mt-2 max-w-xl text-center text-xl leading-8 text-gray-300">
-          更多Sora AI 视频 例子
+          更多Sora AI 视频
         </h2>
 
         <Videos videos={videos} />

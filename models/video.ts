@@ -87,7 +87,7 @@ export async function getRandVideos(
 
   const db = getDb();
   const res = await db.query(
-    `select w.*, u.uuid as user_uuid, u.email as user_email, u.nickname as user_name, u.avatar_url as user_avatar from videos as w left join users as u on w.user_uuid = u.uuid::VARCHAR order by id limit $1 offset $2`,
+    `select w.*, u.uuid as user_uuid, u.email as user_email, u.nickname as user_name, u.avatar_url as user_avatar from videos as w left join users as u on w.user_uuid = u.uuid::VARCHAR order by random() limit $1 offset $2`,
     [limit, offset]
   );
 
@@ -111,7 +111,7 @@ export async function getVideos(page: number, limit: number): Promise<Video[]> {
 
   const db = getDb();
   const res = await db.query(
-    `select w.*, u.uuid as user_uuid, u.email as user_email, u.nickname as user_name, u.avatar_url as user_avatar from videos as w left join users as u on w.user_uuid = u.uuid::VARCHAR order by w.created_at desc limit $1 offset $2`,
+    `select w.*, u.uuid as user_uuid, u.email as user_email, u.nickname as user_name, u.avatar_url as user_avatar from videos as w left join users as u on w.user_uuid = u.uuid::VARCHAR order by id asc limit $1 offset $2`,
     [limit, offset]
   );
   if (res.rowCount === 0) {

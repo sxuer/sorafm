@@ -28,7 +28,7 @@ export default function () {
       });
       const { code, message, data } = await resp.json();
       if (data) {
-        toast.success("目前sora能力尚未开放，请耐心等待");
+        toast.success("sora尚未开放，请耐心等待");
         router.push(`/video/${data.uuid}`);
       }
     } catch (e) {

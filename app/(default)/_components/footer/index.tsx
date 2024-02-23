@@ -74,15 +74,13 @@ export default function () {
               <p className="font-inter font-medium text-black"></p>
               <p className="font-inter ml-4 text-black">
                 {/*进群二维码*/}
-                {/*<img*/}
-                {/*  src={*/}
-                {/*    "https://zknown-1251007641.cos.ap-guangzhou.myqcloud.com/images/20240221231807.png"*/}
-                {/*  }*/}
-                {/*  alt="qrcode"*/}
-                {/*  width={"250"}*/}
-                {/*  height={"400"}*/}
-                {/*  className="rounded-md"*/}
-                {/*/>*/}
+                <img
+                  src={"/img/wxgroup.jpg"}
+                  alt="qrcode"
+                  width={"250"}
+                  height={"400"}
+                  className="rounded-md"
+                />
               </p>
             </div>
           </div>

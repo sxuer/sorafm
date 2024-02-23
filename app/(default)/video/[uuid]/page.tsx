@@ -59,11 +59,11 @@ export default async function ({ params }: { params: { uuid: string } }) {
                     className="video w-full cursor-pointer rounded-md"
                     src={video.video_url}
                     poster={video.cover_url}
-                    preload="auto"
+                    // preload="auto"
                     muted
                     loop
                     controls
-                    autoPlay
+                    // autoPlay
                   >
                     你的浏览器不支持展示当前视频
                   </video>

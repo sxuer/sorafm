@@ -16,11 +16,12 @@ export default ({ videos }: { videos: Video[] }) => {
                       className="video w-full cursor-pointer rounded-md"
                       src={video.video_url}
                       poster={video.cover_url}
-                      preload="auto"
+                      {/*只有特定视频才预加载*/}
+                      preload = {video.uuid === "d92677b3-e662-4b95-8e40-8c508e6b7b6b" ? "auto" : "metadata"}
+                      autoPlay = {video.uuid === "d92677b3-e662-4b95-8e40-8c508e6b7b6b"}
                       muted
                       loop
                       controls
-                      autoPlay
                     >
                       你的浏览器不支持展示当前视频
                     </video>

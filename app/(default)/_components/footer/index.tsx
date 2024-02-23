@@ -89,8 +89,8 @@ export default function () {
         <div>
           <p className="font-inter lg: text-center text-sm text-gray-500">
             © Copyright 2024.{" "}
-            <a href="https://sora-ai.space" target="_blank" className="text-primary">
-              Sora-Ai.Space
+            <a href="https://sora.fm" target="_blank" className="text-primary">
+              Sora.fm
             </a>{" "}
             All rights reserved.
           </p>
